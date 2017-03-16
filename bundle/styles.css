@@ -82,93 +82,109 @@
   src: local('Roboto Black Italic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'); }
 
 /* line 2, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+em, i {
+  font-family: 'Roboto Italic', 'Roboto Light Italic', sans-serif;
+  font-style: normal; }
+
+/* line 8, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+b, strong {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal; }
+
+/* line 16, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+em strong, em b, strong em, strong i {
+  font-family: 'Roboto Bold Italic', sans-serif;
+  font-style: normal; }
+
+/* line 22, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 h2, h2 a {
-  font-family: 'Roboto';
-  font-size: 22.5px;
-  line-height: 31.5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   color: #000;
-  text-transform: uppercase;
   margin: 0;
-  display: block; }
-  /* line 39, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  display: inline-block;
+  font-weight: normal;
+  padding-top: 5px; }
+  /* line 40, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   h2 a:hover, h2 a a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 
-/* line 7, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 27, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 h3, h3 a {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 22.5px;
   line-height: 31.5px;
   margin: 0;
   color: #000;
   text-transform: uppercase;
   display: block; }
-  /* line 83, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 84, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   h3 a:hover, h3 a a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 
-/* line 12, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 32, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 h4, h4 a {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 21px;
   color: #000;
   display: block; }
-  /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 118, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   h4 a:hover, h4 a a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 
-/* line 16, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 36, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 .rubric-h2 {
   font-family: 'Roboto Bold';
   font-size: 22.5px;
   line-height: 31.5px;
-  color: #d50000;
+  color: #007AA4;
   text-transform: uppercase;
   display: block; }
-  /* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 53, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .rubric-h2a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 
-/* line 21, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 41, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 .rubric-h3, .h3-rubric {
   font-family: 'Roboto Bold';
   font-size: 22.5px;
   line-height: 31.5px;
-  color: #d50000;
+  color: #007AA4;
   text-transform: uppercase; }
-  /* line 95, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 96, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .rubric-h3 a:hover, .h3-rubric a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 
-/* line 25, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 45, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 p {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 21px;
   color: #000;
   display: block; }
 
-/* line 29, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 49, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 .pane-title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 22.5px;
   line-height: 31.5px;
-  color: #d50000;
+  color: #007AA4;
   text-transform: uppercase;
   display: block; }
 
-/* line 33, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 53, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 .bean-namu-header-info-block p {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 21px;
   margin: 0; }
-  /* line 152, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 153, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .bean-namu-header-info-block p.time {
     font-family: 'Roboto Bold'; }
 
-/* line 38, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+/* line 58, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
 .icon:hover {
   cursor: pointer; }
 
@@ -199,7 +215,7 @@ body {
 
 /* line 37, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
 li.active, li.active-trail, a.active, a.active-trail {
-  color: #d50000 !important; }
+  color: #007AA4 !important; }
 
 /* line 42, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
 .search-api-form-block input[type=submit] {
@@ -246,26 +262,26 @@ li.active, li.active-trail, a.active, a.active-trail {
 /* line 24, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
 .ui.secondary.pointing.menu {
   border-right: 0 !important; }
-  /* line 171, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 172, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .ui.secondary.pointing.menu .nolink {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 15px;
     line-height: 31.5px;
     text-transform: uppercase; }
-  /* line 179, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 180, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .ui.secondary.pointing.menu a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 15px;
     line-height: 21px;
     text-transform: uppercase; }
-    /* line 186, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 187, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .ui.secondary.pointing.menu a:hover {
-      color: #d50000; }
-    /* line 190, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      color: #007AA4; }
+    /* line 191, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .ui.secondary.pointing.menu a:active {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 28, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
   .ui.secondary.pointing.menu .item {
     border-bottom: 1px solid #000;
@@ -365,26 +381,26 @@ li.active, li.active-trail, a.active, a.active-trail {
     /* line 96, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
     .menu-content .ui.container .ui.stackable.three.column {
       margin: 0; }
-  /* line 171, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 172, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .menu-content .ui.secondary.pointing.menu .nolink {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 15px;
     line-height: 31.5px;
     text-transform: uppercase; }
-  /* line 179, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 180, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .menu-content .ui.secondary.pointing.menu a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 15px;
     line-height: 21px;
     text-transform: uppercase; }
-    /* line 186, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 187, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .menu-content .ui.secondary.pointing.menu a:hover {
-      color: #d50000; }
-    /* line 190, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      color: #007AA4; }
+    /* line 191, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .menu-content .ui.secondary.pointing.menu a:active {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 105, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
   .menu-content .ui.secondary.pointing.menu .item {
     border-bottom: 1px solid #000;
@@ -437,10 +453,10 @@ li.active, li.active-trail, a.active, a.active-trail {
       text-transform: uppercase;
       content: " | ";
       font-size: 20px; }
-      /* line 131, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      /* line 132, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
       .middle.aligned.right.aligned.computer.only .language-switcher-locale-url .first:after a:hover {
         color: #808080; }
-      /* line 135, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      /* line 136, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
       .middle.aligned.right.aligned.computer.only .language-switcher-locale-url .first:after a.active {
         color: #000 !important; }
     /* line 165, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
@@ -450,10 +466,10 @@ li.active, li.active-trail, a.active, a.active-trail {
       line-height: 31.5px;
       color: #808080;
       text-transform: uppercase; }
-      /* line 131, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      /* line 132, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
       .middle.aligned.right.aligned.computer.only .language-switcher-locale-url a a:hover {
         color: #808080; }
-      /* line 135, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      /* line 136, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
       .middle.aligned.right.aligned.computer.only .language-switcher-locale-url a a.active {
         color: #000 !important; }
   /* line 170, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
@@ -625,23 +641,24 @@ picture img {
 
 /* line 28, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
 .page-node h1, .page-taxonomy h1 {
-  font-family: 'Roboto';
-  font-size: 22.5px;
-  line-height: 31.5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   color: #000;
-  text-transform: uppercase;
   margin: 0;
-  display: block;
+  display: inline-block;
+  font-weight: normal;
+  padding-top: 5px;
   margin-bottom: 20px; }
-  /* line 39, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 40, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .page-node h1 a:hover, .page-taxonomy h1 a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 /* line 33, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
 .page-node h3, .page-taxonomy h3 {
   margin: 20px 0; }
 /* line 37, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
 .page-node .paragraphs-items, .page-taxonomy .paragraphs-items {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 21px;
   color: #000; }
@@ -678,16 +695,16 @@ picture img {
   margin-bottom: 15px; }
   /* line 90, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
   .breadcrumb a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 21px;
     color: #000; }
-    /* line 163, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 164, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .breadcrumb a a:hover {
-      color: #d50000; }
+      color: #007AA4; }
     /* line 93, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
     .breadcrumb a:hover {
-      color: #d50000; }
+      color: #007AA4; }
 
 /* line 99, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
 .ui.styled.accordion {
@@ -711,13 +728,13 @@ picture img {
       margin: 0; }
     /* line 113, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
     .ui.styled.accordion .title:hover {
-      color: #d50000; }
+      color: #007AA4; }
     /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
     .ui.styled.accordion .title.active {
-      color: #d50000; }
+      color: #007AA4; }
       /* line 120, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
       .ui.styled.accordion .title.active p {
-        color: #d50000; }
+        color: #007AA4; }
       /* line 124, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
       .ui.styled.accordion .title.active .angle.down.icon {
         display: none; }
@@ -731,7 +748,7 @@ picture img {
     height: 25px; }
     /* line 139, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
     .ui.styled.accordion .angle.icon:hover {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 144, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
   .ui.styled.accordion .angle.down.icon {
     display: inline-block; }
@@ -835,14 +852,14 @@ iframe {
     text-transform: uppercase; }
   /* line 57, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
   .events a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 21px;
     color: #000;
     display: block; }
-    /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 118, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .events a a:hover {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 61, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
   .events i.red.icon {
     font-size: 20px;
@@ -904,14 +921,14 @@ iframe {
     text-transform: uppercase; }
   /* line 129, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
   .flexslider_views_slideshow_slide .node-event a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 21px;
     color: #000;
     display: block; }
-    /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 118, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .flexslider_views_slideshow_slide .node-event a a:hover {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 133, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
   .flexslider_views_slideshow_slide .node-event i.red.icon {
     font-size: 20px;
@@ -943,14 +960,14 @@ iframe {
   text-transform: uppercase; }
 /* line 164, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
 .event-overview.panel a {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 21px;
   color: #000;
   display: block; }
-  /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 118, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .event-overview.panel a a:hover {
-    color: #d50000; }
+    color: #007AA4; }
 /* line 168, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
 .event-overview.panel i.red.icon {
   font-size: 20px;
@@ -962,19 +979,19 @@ iframe {
   background-color: #808080;
   height: 200px;
   margin-top: 30px; }
-  /* line 223, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  /* line 224, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
   .footer-wrapper a {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 15px;
     line-height: 21px;
     text-transform: uppercase; }
-    /* line 230, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    /* line 231, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .footer-wrapper a:hover {
-      color: #d50000; }
-    /* line 234, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      color: #007AA4; }
+    /* line 235, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
     .footer-wrapper a:active {
-      color: #d50000; }
+      color: #007AA4; }
   /* line 7, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_footer.scss */
   .footer-wrapper .menu {
     list-style-type: none;

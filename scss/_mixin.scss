@@ -2,7 +2,7 @@
   @if $style != '' {
     font-family: '#{$fontFamily} #{$style}';
   } @else {
-    font-family: '#{$fontFamily}';
+    font-family: '#{$fontFamily}', sans-serif;
   }
   
 }
@@ -29,13 +29,14 @@
 
 @mixin h2-title {
   @include setFont();
-  font-size: 22.5px;
-  line-height: 31.5px;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   color: $black;
-  text-transform: uppercase;
   margin: 0;
-  display: block;
-  
+  display: inline-block;
+  font-weight: normal;
+  padding-top: 5px;
+    
   a:hover {
     color: $red;
   }

@@ -1,3 +1,23 @@
+em,
+i {
+  font-family: 'Roboto Italic', 'Roboto Light Italic', sans-serif; 
+  font-style: normal;
+}
+
+b,
+strong {
+  font-family: 'Roboto', sans-serif; 
+  font-style: normal;
+}
+
+em strong, 
+em b, 
+strong em, 
+strong i {
+  font-family: 'Roboto Bold Italic', sans-serif; 
+  font-style: normal;
+}
+
 h2,
 h2 a {
   @include h2-title;
