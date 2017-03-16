@@ -1,0 +1,173 @@
+.events {
+  margin-bottom: 40px;
+  
+  .pane-title {
+    margin: 50px 0 20px;
+    position: relative;
+    
+    .calendar-date {
+      top: 0;
+      color: $grey;
+      display: inline-block;
+      font-size: 35px;
+      height: 37px;
+      left: 12px;
+      line-height: 70px;
+      position: absolute;
+      text-shadow: 3px 0 0 $white, -3px 0 0 $white, 0 3px 0 $white, 0 -3px 0 $white, 2px 2px $white, -2px -2px 0 $white, 2px -2px 0 $white, -2px 2px 0 $white;
+    }
+    
+    .calendar.outline.icon {
+      font-size: 50px;
+      color: $grey;
+      margin-left: 20px;
+      position: relative;
+    }
+    
+  }
+  
+  article {
+    position: relative;
+  }
+  
+  .teaser-content {
+    background: url('../images/white-trans.png');
+    height: 82%;
+    margin: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 88%;
+    
+    @include to(tablet) {
+     margin: 10px;
+    }
+    
+    @include to(smartphone) {
+      width: 93%;
+      height: 90%;
+    }
+  }
+  
+  span {
+    @include h4-date;
+  }
+  
+  a {
+    @include h4-title;
+  }
+  
+  i.red.icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+  }
+  
+  @include to(smartphone) {
+    display: none;
+  }
+  
+  &.mobile {
+    display: none;
+    
+    @include to(tablet) {
+      display: block;
+    }
+  }
+}
+
+
+.flexslider_views_slideshow_slide .node-event {
+  
+  position: relative;
+  
+  .pane-title {
+    margin: 50px 0 20px;
+    position: relative;
+    
+    .calendar-date {
+      top: 0;
+      color: $grey;
+      display: inline-block;
+      font-size: 35px;
+      height: 37px;
+      left: 12px;
+      line-height: 70px;
+      position: absolute;
+      text-shadow: 3px 0 0 $white, -3px 0 0 $white, 0 3px 0 $white, 0 -3px 0 $white, 2px 2px $white, -2px -2px 0 $white, 2px -2px 0 $white, -2px 2px 0 $white;
+    }
+    
+    .calendar.outline.icon {
+      font-size: 50px;
+      color: $grey;
+      margin-left: 20px;
+      position: relative;
+    }
+    
+  }
+  
+  .teaser-content {
+    background: url('../images/white-trans.png');
+    height: 82%;
+    margin: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 88%;
+    
+    @include to(tablet) {
+     margin: 10px;
+    }
+  }
+  
+  span {
+    @include h4-date;
+  }
+  
+  a {
+    @include h4-title;
+  }
+  
+  i.red.icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.event-overview.panel {
+  #content {
+    margin-top: 0;
+  }
+  
+  .teaser-content {
+    background: url('../images/white-trans.png');
+    height: 82%;
+    margin: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 81%;
+    
+    @include to(tablet) {
+     margin: 10px;
+    }
+  }
+  
+  span {
+    @include h4-date;
+  }
+  
+  a {
+    @include h4-title;
+  }
+  
+  i.red.icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+  }
+}

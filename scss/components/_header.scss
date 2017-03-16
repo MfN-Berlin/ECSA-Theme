@@ -1,0 +1,245 @@
+.header-wrapper {
+  background: url('../images/white-trans.png');
+  height: auto;
+  padding: 25px 0;
+  position: relative;
+  top: 0;
+  z-index: 1900;
+  
+  @include to(tablet){
+    height: auto;
+    padding: 10px 0;
+    position: unset;
+    top: 0;
+    z-index: 1900;
+  
+    &.ui.container {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+  
+  @include to(smartphone) {
+    padding: 10px;
+  }
+
+  .one.column,
+  .two.column {
+    background: transparent;
+
+    .icon {
+      color: $grey;
+      font-size: 5em;
+      line-height: 70px;
+    }
+    @include to(smartphone) {
+      .icon {
+        color: $grey;
+        font-size: 3em;
+        line-height: 100%;
+      }
+    }
+    @include at(tablet) {
+      .icon {
+        color: $grey;
+        font-size: 2em;
+      }
+    }
+    
+  }
+  
+  .logo {
+    display: inline-block;
+    max-width: 100%;
+    
+    img {
+    
+      @include at(tablet) {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@include at(tablet) {
+	#header {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+}
+
+@include between(tablet,desktop) {
+  #menu-content{
+    width: 100% !important;
+  }
+}
+
+.menu-content {
+  position: absolute;
+  z-index: 1000;
+  
+  .ui.container {
+    background-color: white;
+    
+    @include at(tablet){
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+	   }
+	   
+	   @include to(tablet){
+      width: 100%;
+      margin: 0 !important;
+     }
+    @include from(tablet) {
+      background: url('../images/white-trans.png');
+    }
+    .ui.stackable.three.column {
+      margin: 0;
+    }
+
+  }
+  
+  .ui.secondary.pointing.menu {
+    @include menu;
+    
+    .item {
+      border-bottom: 1px solid $black;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-bottom: .3rem;
+      padding-left: 0;
+      padding-right: 0;
+	 }
+	  
+    .header {
+      border-bottom: 0;
+      font-size: 180%;
+      margin-left: 1.2rem;
+      padding-bottom: 0;
+      
+      @include to(tablet) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .ui.menu {
+    border-right: 0 !important;
+  }
+  
+  .bean-namu-header-info-block {
+    p {
+      margin: 0;
+    }
+  }
+}
+ 
+
+.ui.left.pointing.dropdown.icon.button {
+  display: none;
+  position: absolute;
+}
+
+.middle.aligned.right.aligned.computer.only {
+  height: 150px;
+  
+  .language-switcher-locale-url {
+    margin: 0;
+    height: auto;
+    padding-right: 35px;
+    
+    @include to(tablet) {
+      padding: 0;
+    }
+    
+    li {
+      display: inline-block;
+    }
+    
+    .first:after {
+      @include language;
+      content: " | ";
+      font-size: 20px;
+    }
+    
+    a {
+      @include language;
+    }
+  }
+  
+  .search-api-form-block {
+    padding-right: 35px;
+    
+    @include to(tablet) {
+      padding-right: 0;
+    }
+    
+    .wide.field {
+      margin: 0;
+    }
+    
+    .search.icon {
+      color: $grey;
+      font-size: 50px;
+      line-height: 50px;
+      width: 50px;
+      margin: 0;
+      opacity: 1;
+    }
+    
+    input,
+    input:focus {
+      @include search-title;
+      padding: 10px;
+      font-size: 16px;
+      margin: 0;
+      margin-right: 55px;
+      height: 50px;
+      border-radius: 25px;
+      background: #fafafa;
+      opacity: 1;
+      border: 1px solid #edecec;
+      color: $grey;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.menu-content {
+  .search-api-form-block {
+    display: none;
+    margin: 0 10px;
+    
+    @include to(smartphone) {
+      display: block;
+      padding-top: 20px;
+      
+      .ui.icon.input input {
+        @include search-title;
+        margin-left: 30px !important;
+        padding: 10px;
+        font-size: 16px;
+        margin: 0;
+        height: 25px;
+        border-radius: 25px;
+        background: #fafafa;
+        opacity: 1;
+        border: 1px solid #edecec;
+        line-height: 25px;
+        color: $grey;
+        text-transform: uppercase;
+      }
+      
+      .search.icon {
+        color: $grey;
+        font-size: 25px;
+        line-height: 25px;
+        width: 25px !important;
+        margin: 0;
+        opacity: 1;
+        left: 0;
+      }
+    }
+  }
+}
+

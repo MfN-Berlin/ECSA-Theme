@@ -1,0 +1,30 @@
+.footer-wrapper {
+  @include footermenu;
+  background-color: $grey;
+  height: 200px;
+  margin-top: 30px;
+  
+  .menu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 300px;
+    
+    
+    li {
+      display: inline-block;
+      width: 120px;
+      float: right;
+      text-align: left;
+      &:nth-child(2n+1) {
+        float: left;
+      }
+    }
+  }
+  
+  @include to(smartphone) {
+    padding: 20px 10px;
+    height: 150px;
+    
+  }
+}

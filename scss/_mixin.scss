@@ -1,0 +1,238 @@
+@mixin setFont($style :'') {
+  @if $style != '' {
+    font-family: '#{$fontFamily} #{$style}';
+  } @else {
+    font-family: '#{$fontFamily}';
+  }
+  
+}
+
+@mixin overview-title {
+  @include setFont();
+  font-size: 15px;
+  line-height: 31.5px;
+  color: $black;
+  text-transform: uppercase;
+  display: block;
+}
+
+@mixin event-title {
+  @include setFont();
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: $red;
+  text-transform: uppercase;
+  display: block;
+}
+
+//H2
+
+@mixin h2-title {
+  @include setFont();
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: $black;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+@mixin h2-rubric {
+  @include setFont('Bold');
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: $red;
+  text-transform: uppercase;
+  display: block;
+  
+  &a:hover {
+    color: $red;
+  }
+}
+
+@mixin h2-teaser {
+  @include setFont();
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+  display: block;
+}
+
+@mixin h2-body {
+  @include setFont();
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+}
+
+//H3
+
+@mixin h3-title {
+  @include setFont();
+  font-size: 22.5px;
+  line-height: 31.5px;
+  margin: 0;
+  color: $black;
+  text-transform: uppercase;
+  display: block;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+@mixin h3-rubric {
+  @include setFont('Bold');
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: $red;
+  text-transform: uppercase;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+//H4
+
+@mixin h4-date {
+  @include setFont('Bold');
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@mixin h4-title {
+  @include setFont();
+  font-size: 12px;
+  line-height: 21px;
+  color: $black;
+  display: block;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+//Header
+
+@mixin language {
+  @include setFont('Bold');
+  font-size: 15px;
+  line-height: 31.5px;
+  color: $grey;
+  text-transform: uppercase;
+  
+  a:hover {
+    color: $grey;
+  }
+  
+  a.active {
+    color: $black !important;
+  }
+}
+
+@mixin search-title {
+  @include setFont('Bold');
+  font-size: 15px;
+  line-height: 31.5px;
+  text-transform: uppercase;
+}
+
+@mixin opening {
+  @include setFont();
+  font-size: 15px;
+  line-height: 21px;
+  
+  &.time {
+    @include setFont('Bold');
+  }
+}
+
+@mixin breakcrumb {
+  @include setFont();
+  font-size: 15px;
+  line-height: 21px;
+  color: $black;
+  
+  a:hover {
+    color: $red;
+  }
+}
+
+//Menu
+
+@mixin menu {
+  .nolink {
+    @include setFont();
+    color: $black;
+    font-size: 15px;
+    line-height: 31.5px;
+    text-transform: uppercase;
+  }
+  
+  a {
+    @include setFont();
+    color: $black;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    
+    &:hover {
+      color: $red;
+    }
+    
+    &:active {
+      color: $red;
+    }
+  }
+}
+
+@mixin taxmenu {
+  a {
+    @include setFont();
+    color: $black;
+    font-size: 15px;
+    line-height: 31.5px;
+    text-transform: uppercase;
+    
+    &:hover {
+      color: $red;
+    }
+    
+    &:active {
+      color: $red;
+    }
+  }
+}
+
+@mixin centerall {
+  @include display(flex);
+  @include prefixer(box-align, center, webkit moz ms spec);
+  @include prefixer(align-items, center, webkit spec);
+  @include prefixer(box-pack, center, webkit moz);
+  @include prefixer(justify-content, center, webkit spec);
+}
+
+@mixin footermenu {
+  a {
+    @include setFont();
+    color: $white;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    
+    &:hover {
+      color: $red;
+    }
+    
+    &:active {
+      color: $red;
+    }
+  }
+}

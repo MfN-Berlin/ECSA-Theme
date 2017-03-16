@@ -1,0 +1,73 @@
+//Frameworks
+@import 'singularitygs';
+@import 'breakpoint-slicer';
+@import 'bourbon';
+
+//Defaults
+@import 'variables';
+@import 'mixin';
+@import 'typo';
+@import 'layout';
+@import 'components/base';
+@import 'components/header';
+@import 'components/slider';
+@import 'components/nodes';
+@import 'components/events';
+@import 'components/footer';
+
+header {
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.no.border {
+  border: 0 !important;
+  box-shadow: none;
+  
+  *, 
+  .extra {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+picture {
+  width: 100%;
+  
+  img {
+    width: 100%;
+  }
+}
+
+
+/** HELPER **/
+
+@each $break in $slicer-breakpoint-names {
+  .only.#{$break} {
+    display: none;
+    &:after {
+      content: "#{$break}";
+    }
+    @include at($break) {
+      display: block;
+    }
+  }
+}
+
+.helper-breadkpoints div{
+	position: absolute;
+	top: 2em;
+	left: 1em;
+	width: auto;
+	z-index: 5000;
+	border-radius: .4em;
+	background-color: black;
+	color: white;
+	padding: .3em;
+}

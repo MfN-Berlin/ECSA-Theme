@@ -1,0 +1,137 @@
+/*
+@include font-face("tradegothicltcom-bd2", "../fonts/TradeGothic/TradeGothicLTStd-Bd2", $file-formats: otf);
+@include font-face("tradegothiclt", "../fonts/TradeGothic/TradeGothicLTStd", $file-formats: otf);
+@include font-face("tradegothicltcom-bd2", "../fonts/TradeGothic/TradeGothicLTStd-Bd2", $file-formats: woff);
+@include font-face("tradegothiclt", "../fonts/TradeGothic/TradeGothicLTStd", $file-formats: woff);
+@include font-face("tradegothicltcom-bd2obl", "../fonts/TradeGothic/TradeGothicLTStd-Bd2Obl", $file-formats: otf);
+@include font-face("tradegothicltcom-bd2obl", "../fonts/TradeGothic/TradeGothicLTStd-Bd2Obl", $file-formats: woff);
+@include font-face("tradegothicltcom-obl", "../fonts/TradeGothic/TradeGothicLTStd-Obl", $file-formats: otf);
+@include font-face("tradegothicltcom-obl", "../fonts/TradeGothic/TradeGothicLTStd-Obl", $file-formats: woff);
+*/
+
+
+
+
+
+
+
+$fontFamily: 'Roboto';
+
+/** FONTS **/
+@font-face {
+  font-family: '#{$fontFamily} Thin';
+  font-style: normal;
+  font-weight: 100;
+  src: local('#{$fontFamily} Thin'), url(https://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('#{$fontFamily} Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily}';
+  font-style: normal;
+  font-weight: 400;
+  src: local('#{$fontFamily}'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: '#{$fontFamily} Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('#{$fontFamily} Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('#{$fontFamily} Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Black';
+  font-style: normal;
+  font-weight: 900;
+  src: local('#{$fontFamily} Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Thin Italic';
+  font-style: italic;
+  font-weight: 100;
+  src: local('#{$fontFamily} Thin Italic'), url(https://fonts.gstatic.com/s/roboto/v15/12mE4jfMSBTmg-81EiS-Yfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Light Italic';
+  font-style: italic;
+  font-weight: 300;
+  src: local('#{$fontFamily} Light Italic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('#{$fontFamily} Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Medium Italic';
+  font-style: italic;
+  font-weight: 500;
+  src: local('#{$fontFamily} Medium Italic'), url(https://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Bold Italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('#{$fontFamily} Bold Italic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+@font-face {
+  font-family: '#{$fontFamily} Black Italic';
+  font-style: italic;
+  font-weight: 900;
+  src: local('#{$fontFamily} Black Italic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+
+
+// Typography
+$gothicbold2: "tradegothicltcom-bd2", sans-serif;
+$gothicregular: "tradegothiclt", sans-serif;
+
+// Font Sizes
+$base-font-size: 16em;
+$font-small-size: 14em;
+$h1-font-size: 42em;
+$h2-font-size: 20em;
+$h3-font-size: 20em;
+$h4-font-size: 16em;
+$h5-font-size: 16em;
+$h6-font-size: 16em;
+$navi-font-size: 19em;
+
+// Smaller Font Sizes for Mobile
+$base-font-size-mobile: $base-font-size * .85;
+$font-small-size-mobile: $font-small-size * .85;
+$h1-font-size-mobile: $h1-font-size * .85;
+$h2-font-size-mobile: $h2-font-size * .85;
+$h3-font-size-mobile: $h3-font-size * .85;
+$h4-font-size-mobile: $h4-font-size * .85;
+$h5-font-size-mobile: $h5-font-size * .85;
+$h6-font-size-mobile: $h6-font-size * .85;
+$navi-font-size-mobile: $navi-font-size * .85;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Colors
+$red: #d50000;
+$black: #000;
+$white: #fff;
+$grey: #808080;
+
+//BREAKPOINTS
+$slicer-breakpoints: 0 768px 991px 1200px;
+$slicer-breakpoint-names: 'smartphone' 'tablet' 'desktop' 'wide';
+
+$body-padding : 180px;
+$content-body-padding : $body-padding + 80;

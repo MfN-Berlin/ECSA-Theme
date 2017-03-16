@@ -1,0 +1,1076 @@
+/*
+@include font-face("tradegothicltcom-bd2", "../fonts/TradeGothic/TradeGothicLTStd-Bd2", $file-formats: otf);
+@include font-face("tradegothiclt", "../fonts/TradeGothic/TradeGothicLTStd", $file-formats: otf);
+@include font-face("tradegothicltcom-bd2", "../fonts/TradeGothic/TradeGothicLTStd-Bd2", $file-formats: woff);
+@include font-face("tradegothiclt", "../fonts/TradeGothic/TradeGothicLTStd", $file-formats: woff);
+@include font-face("tradegothicltcom-bd2obl", "../fonts/TradeGothic/TradeGothicLTStd-Bd2Obl", $file-formats: otf);
+@include font-face("tradegothicltcom-bd2obl", "../fonts/TradeGothic/TradeGothicLTStd-Bd2Obl", $file-formats: woff);
+@include font-face("tradegothicltcom-obl", "../fonts/TradeGothic/TradeGothicLTStd-Obl", $file-formats: otf);
+@include font-face("tradegothicltcom-obl", "../fonts/TradeGothic/TradeGothicLTStd-Obl", $file-formats: woff);
+*/
+/** FONTS **/
+@font-face {
+  font-family: 'Roboto Thin';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), url(https://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Black';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Thin Italic';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Roboto Thin Italic'), url(https://fonts.gstatic.com/s/roboto/v15/12mE4jfMSBTmg-81EiS-Yfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Light Italic';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Medium Italic';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), url(https://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Bold Italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'); }
+
+@font-face {
+  font-family: 'Roboto Black Italic';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Roboto Black Italic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'); }
+
+/* line 2, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+h2, h2 a {
+  font-family: 'Roboto';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  display: block; }
+  /* line 39, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  h2 a:hover, h2 a a:hover {
+    color: #d50000; }
+
+/* line 7, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+h3, h3 a {
+  font-family: 'Roboto';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  margin: 0;
+  color: #000;
+  text-transform: uppercase;
+  display: block; }
+  /* line 83, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  h3 a:hover, h3 a a:hover {
+    color: #d50000; }
+
+/* line 12, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+h4, h4 a {
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 21px;
+  color: #000;
+  display: block; }
+  /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  h4 a:hover, h4 a a:hover {
+    color: #d50000; }
+
+/* line 16, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+.rubric-h2 {
+  font-family: 'Roboto Bold';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: #d50000;
+  text-transform: uppercase;
+  display: block; }
+  /* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .rubric-h2a:hover {
+    color: #d50000; }
+
+/* line 21, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+.rubric-h3, .h3-rubric {
+  font-family: 'Roboto Bold';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: #d50000;
+  text-transform: uppercase; }
+  /* line 95, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .rubric-h3 a:hover, .h3-rubric a:hover {
+    color: #d50000; }
+
+/* line 25, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+p {
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 21px;
+  color: #000;
+  display: block; }
+
+/* line 29, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+.pane-title {
+  font-family: 'Roboto';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: #d50000;
+  text-transform: uppercase;
+  display: block; }
+
+/* line 33, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+.bean-namu-header-info-block p {
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0; }
+  /* line 152, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .bean-namu-header-info-block p.time {
+    font-family: 'Roboto Bold'; }
+
+/* line 38, /local/apache/ecsa/html/sites/all/themes/namu/scss/_typo.scss */
+.icon:hover {
+  cursor: pointer; }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+body {
+  margin: 0 auto;
+  max-width: 1200px; }
+  /* line 5, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+  body.with-body-padding #content {
+    padding-top: 260px; }
+    @media  (max-width: 991px) {
+      body.with-body-padding #content {
+        padding-top: 0; } }
+
+/* line 15, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.ui.grid.content-padding-top, .page-node.content-padding-top #content {
+  padding-top: 260px; }
+  @media  (max-width: 991px) {
+    .ui.grid.content-padding-top, .page-node.content-padding-top #content {
+      padding-top: 0; } }
+
+/* line 25, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.front .panel-pane:not(:first-child) {
+  padding: 0 50px; }
+  @media  (max-width: 991px) {
+    .front .panel-pane:not(:first-child) {
+      padding: 0 20px; } }
+
+/* line 37, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+li.active, li.active-trail, a.active, a.active-trail {
+  color: #d50000 !important; }
+
+/* line 42, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.search-api-form-block input[type=submit] {
+  position: absolute;
+  visibility: hidden; }
+
+/* line 48, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.pane-namu-slider-panel-pane-1 + .pane-namu-content-listing-panel-pane-5 {
+  margin-top: 50px; }
+
+/* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.ui.styled.accordion {
+  width: 100%; }
+
+/* line 56, /local/apache/ecsa/html/sites/all/themes/namu/scss/_layout.scss */
+.video-js {
+  width: 100%;
+  height: auto; }
+
+@media  (max-width: 1200px) {
+  :not(.front).content {
+    padding: 0 15px; } }
+
+@media  (min-width: 1201px) {
+  .ui.container {
+    width: 1200px; } }
+
+/* line 7, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+.ui.segment {
+  margin: 0;
+  padding: 0; }
+
+/* line 12, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+.ui.left.pointing.dropdown {
+  display: none; }
+
+/* line 16, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+#content {
+  margin-top: -260px; }
+  @media  (max-width: 991px) {
+    #content {
+      margin-top: 0; } }
+
+/* line 24, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+.ui.secondary.pointing.menu {
+  border-right: 0 !important; }
+  /* line 171, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .ui.secondary.pointing.menu .nolink {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 15px;
+    line-height: 31.5px;
+    text-transform: uppercase; }
+  /* line 179, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .ui.secondary.pointing.menu a {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase; }
+    /* line 186, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .ui.secondary.pointing.menu a:hover {
+      color: #d50000; }
+    /* line 190, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .ui.secondary.pointing.menu a:active {
+      color: #d50000; }
+  /* line 28, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+  .ui.secondary.pointing.menu .item {
+    border-bottom: 1px solid #000;
+    border-right: 0 !important;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase; }
+  /* line 41, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_base.scss */
+  .ui.secondary.pointing.menu .header {
+    border-bottom: 0;
+    font-size: 180%;
+    margin-left: 1.2rem;
+    padding-bottom: 0; }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+.header-wrapper {
+  background: url('../images/white-trans.png');
+  height: auto;
+  padding: 25px 0;
+  position: relative;
+  top: 0;
+  z-index: 1900; }
+  @media  (max-width: 991px) {
+    .header-wrapper {
+      height: auto;
+      padding: 10px 0;
+      position: unset;
+      top: 0;
+      z-index: 1900; }
+      /* line 16, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+      .header-wrapper.ui.container {
+        margin-left: auto !important;
+        margin-right: auto !important; } }
+  @media  (max-width: 768px) {
+    .header-wrapper {
+      padding: 10px; } }
+  /* line 27, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .header-wrapper .one.column, .header-wrapper .two.column {
+    background: transparent; }
+    /* line 30, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .header-wrapper .one.column .icon, .header-wrapper .two.column .icon {
+      color: #808080;
+      font-size: 5em;
+      line-height: 70px; }
+    @media  (max-width: 768px) {
+      /* line 36, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+      .header-wrapper .one.column .icon, .header-wrapper .two.column .icon {
+        color: #808080;
+        font-size: 3em;
+        line-height: 100%; } }
+    @media  (min-width: 769px) and (max-width: 991px) {
+      /* line 43, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+      .header-wrapper .one.column .icon, .header-wrapper .two.column .icon {
+        color: #808080;
+        font-size: 2em; } }
+  /* line 51, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .header-wrapper .logo {
+    display: inline-block;
+    max-width: 100%; }
+    @media  (min-width: 769px) and (max-width: 991px) {
+      .header-wrapper .logo img {
+        max-width: 90%; } }
+
+@media  (min-width: 769px) and (max-width: 991px) {
+  /* line 65, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  #header {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media  (min-width: 769px) and (max-width: 1200px) {
+  /* line 72, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  #menu-content {
+    width: 100% !important; } }
+
+/* line 77, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+.menu-content {
+  position: absolute;
+  z-index: 1000; }
+  /* line 81, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .menu-content .ui.container {
+    background-color: white; }
+    @media  (min-width: 769px) and (max-width: 991px) {
+      .menu-content .ui.container {
+        margin-left: 0 !important;
+        margin-right: 0 !important; } }
+    @media  (max-width: 991px) {
+      .menu-content .ui.container {
+        width: 100%;
+        margin: 0 !important; } }
+    @media  (min-width: 769px) {
+      .menu-content .ui.container {
+        background: url('../images/white-trans.png'); } }
+    /* line 96, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .menu-content .ui.container .ui.stackable.three.column {
+      margin: 0; }
+  /* line 171, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .menu-content .ui.secondary.pointing.menu .nolink {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 15px;
+    line-height: 31.5px;
+    text-transform: uppercase; }
+  /* line 179, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .menu-content .ui.secondary.pointing.menu a {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase; }
+    /* line 186, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .menu-content .ui.secondary.pointing.menu a:hover {
+      color: #d50000; }
+    /* line 190, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .menu-content .ui.secondary.pointing.menu a:active {
+      color: #d50000; }
+  /* line 105, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .menu-content .ui.secondary.pointing.menu .item {
+    border-bottom: 1px solid #000;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: .3rem;
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 114, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .menu-content .ui.secondary.pointing.menu .header {
+    border-bottom: 0;
+    font-size: 180%;
+    margin-left: 1.2rem;
+    padding-bottom: 0; }
+    @media  (max-width: 991px) {
+      .menu-content .ui.secondary.pointing.menu .header {
+        padding-top: 0; } }
+  /* line 126, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .menu-content .ui.menu {
+    border-right: 0 !important; }
+  /* line 131, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .menu-content .bean-namu-header-info-block p {
+    margin: 0; }
+
+/* line 138, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+.ui.left.pointing.dropdown.icon.button {
+  display: none;
+  position: absolute; }
+
+/* line 143, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+.middle.aligned.right.aligned.computer.only {
+  height: 150px; }
+  /* line 146, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .middle.aligned.right.aligned.computer.only .language-switcher-locale-url {
+    margin: 0;
+    height: auto;
+    padding-right: 35px; }
+    @media  (max-width: 991px) {
+      .middle.aligned.right.aligned.computer.only .language-switcher-locale-url {
+        padding: 0; } }
+    /* line 155, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .language-switcher-locale-url li {
+      display: inline-block; }
+    /* line 159, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .language-switcher-locale-url .first:after {
+      font-family: 'Roboto Bold';
+      font-size: 15px;
+      line-height: 31.5px;
+      color: #808080;
+      text-transform: uppercase;
+      content: " | ";
+      font-size: 20px; }
+      /* line 131, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      .middle.aligned.right.aligned.computer.only .language-switcher-locale-url .first:after a:hover {
+        color: #808080; }
+      /* line 135, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      .middle.aligned.right.aligned.computer.only .language-switcher-locale-url .first:after a.active {
+        color: #000 !important; }
+    /* line 165, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .language-switcher-locale-url a {
+      font-family: 'Roboto Bold';
+      font-size: 15px;
+      line-height: 31.5px;
+      color: #808080;
+      text-transform: uppercase; }
+      /* line 131, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      .middle.aligned.right.aligned.computer.only .language-switcher-locale-url a a:hover {
+        color: #808080; }
+      /* line 135, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+      .middle.aligned.right.aligned.computer.only .language-switcher-locale-url a a.active {
+        color: #000 !important; }
+  /* line 170, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+  .middle.aligned.right.aligned.computer.only .search-api-form-block {
+    padding-right: 35px; }
+    @media  (max-width: 991px) {
+      .middle.aligned.right.aligned.computer.only .search-api-form-block {
+        padding-right: 0; } }
+    /* line 177, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .search-api-form-block .wide.field {
+      margin: 0; }
+    /* line 181, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .search-api-form-block .search.icon {
+      color: #808080;
+      font-size: 50px;
+      line-height: 50px;
+      width: 50px;
+      margin: 0;
+      opacity: 1; }
+    /* line 191, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+    .middle.aligned.right.aligned.computer.only .search-api-form-block input, .middle.aligned.right.aligned.computer.only .search-api-form-block input:focus {
+      font-family: 'Roboto Bold';
+      font-size: 15px;
+      line-height: 31.5px;
+      text-transform: uppercase;
+      padding: 10px;
+      font-size: 16px;
+      margin: 0;
+      margin-right: 55px;
+      height: 50px;
+      border-radius: 25px;
+      background: #fafafa;
+      opacity: 1;
+      border: 1px solid #edecec;
+      color: #808080;
+      text-transform: uppercase; }
+
+/* line 209, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+.menu-content .search-api-form-block {
+  display: none;
+  margin: 0 10px; }
+  @media  (max-width: 768px) {
+    .menu-content .search-api-form-block {
+      display: block;
+      padding-top: 20px; }
+      /* line 217, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+      .menu-content .search-api-form-block .ui.icon.input input {
+        font-family: 'Roboto Bold';
+        font-size: 15px;
+        line-height: 31.5px;
+        text-transform: uppercase;
+        margin-left: 30px !important;
+        padding: 10px;
+        font-size: 16px;
+        margin: 0;
+        height: 25px;
+        border-radius: 25px;
+        background: #fafafa;
+        opacity: 1;
+        border: 1px solid #edecec;
+        line-height: 25px;
+        color: #808080;
+        text-transform: uppercase; }
+      /* line 233, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_header.scss */
+      .menu-content .search-api-form-block .search.icon {
+        color: #808080;
+        font-size: 25px;
+        line-height: 25px;
+        width: 25px !important;
+        margin: 0;
+        opacity: 1;
+        left: 0; } }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+.flexslider {
+  border: 0;
+  margin-bottom: 50px; }
+  /* line 5, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .flexslider li {
+    position: relative; }
+  /* line 9, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .flexslider .group-content {
+    background: url('../images/white-trans.png');
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    padding: 20px;
+    position: absolute;
+    width: 95%; }
+    /* line 20, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+    .flexslider .group-content .rubric-h2, .flexslider .group-content h2, .flexslider .group-content p {
+      width: 60%;
+      margin: 0; }
+    @media  (max-width: 768px) {
+      .flexslider .group-content {
+        margin: 10px;
+        padding: 10px; }
+        /* line 27, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+        .flexslider .group-content p {
+          display: none; } }
+  /* line 35, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .flexslider .flex-control-paging a {
+    background: #808080;
+    height: 15px;
+    opacity: .5;
+    width: 15px; }
+  /* line 42, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .flexslider .flex-control-paging .flex-active {
+    background: #808080;
+    opacity: 1; }
+
+/* line 54, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+.events .flexslider, .events .flexslider:hover {
+  margin: 0 auto;
+  width: 100%; }
+  /* line 58, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .events .flexslider .flex-direction-nav, .events .flexslider:hover .flex-direction-nav {
+    height: 30px;
+    position: absolute;
+    top: 42%;
+    width: 100%; }
+    /* line 64, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+    .events .flexslider .flex-direction-nav a, .events .flexslider:hover .flex-direction-nav a {
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+      display: block;
+      line-height: 21px;
+      padding: 10px;
+      top: 8px; }
+    /* line 72, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+    .events .flexslider .flex-direction-nav a:before, .events .flexslider:hover .flex-direction-nav a:before {
+      color: #808080;
+      font-size: 25px; }
+  /* line 78, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .events .flexslider .flex-next, .events .flexslider:hover .flex-next {
+    opacity: 1 !important;
+    right: -50px !important; }
+    @media  (max-width: 991px) {
+      .events .flexslider .flex-next, .events .flexslider:hover .flex-next {
+        right: -3% !important; } }
+  /* line 87, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_slider.scss */
+  .events .flexslider .flex-prev, .events .flexslider:hover .flex-prev {
+    left: -50px !important;
+    opacity: 1 !important; }
+    @media  (max-width: 991px) {
+      .events .flexslider .flex-prev, .events .flexslider:hover .flex-prev {
+        left: -3% !important; } }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+picture img {
+  display: block; }
+
+/* line 6, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.taxonomy-term.view-mode-teaser, .view-mode-namu_big_teaser {
+  position: relative; }
+  /* line 9, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .taxonomy-term.view-mode-teaser .content-text, .view-mode-namu_big_teaser .content-text {
+    background: url('../images/white-trans.png');
+    bottom: 0;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    width: 92.5%; }
+    @media  (max-width: 991px) {
+      .taxonomy-term.view-mode-teaser .content-text, .view-mode-namu_big_teaser .content-text {
+        width: 93%;
+        margin: 10px; } }
+
+/* line 28, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node h1, .page-taxonomy h1 {
+  font-family: 'Roboto';
+  font-size: 22.5px;
+  line-height: 31.5px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+  margin-bottom: 20px; }
+  /* line 39, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .page-node h1 a:hover, .page-taxonomy h1 a:hover {
+    color: #d50000; }
+/* line 33, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node h3, .page-taxonomy h3 {
+  margin: 20px 0; }
+/* line 37, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node .paragraphs-items, .page-taxonomy .paragraphs-items {
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 21px;
+  color: #000; }
+@media  (min-width: 992px) and (max-width: 1200px) {
+  .page-node .content, .page-taxonomy .content {
+    padding: 0; } }
+/* line 48, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node .view-namu-show-content-for-term-in-sidebar, .page-taxonomy .view-namu-show-content-for-term-in-sidebar {
+  margin-bottom: 40px; }
+  /* line 51, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .page-node .view-namu-show-content-for-term-in-sidebar a, .page-taxonomy .view-namu-show-content-for-term-in-sidebar a {
+    border-top: 1px solid #808080 !important;
+    padding: 20px 0px; }
+    /* line 55, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .page-node .view-namu-show-content-for-term-in-sidebar a:last-child, .page-taxonomy .view-namu-show-content-for-term-in-sidebar a:last-child {
+      border-bottom: 1px solid #808080 !important; }
+/* line 61, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node .events, .page-taxonomy .events {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; }
+  /* line 69, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .page-node .events .flexslider .flex-next, .page-node .events .flexslider:hover .flex-next, .page-taxonomy .events .flexslider .flex-next, .page-taxonomy .events .flexslider:hover .flex-next {
+    right: -35px !important; }
+  /* line 73, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .page-node .events .flexslider .flex-prev, .page-node .events .flexslider:hover .flex-prev, .page-taxonomy .events .flexslider .flex-prev, .page-taxonomy .events .flexslider:hover .flex-prev {
+    left: -35px !important; }
+@media  (max-width: 991px) {
+  .page-node .ui.stackable.grid > .wide.column, .page-taxonomy .ui.stackable.grid > .wide.column {
+    padding: 0 20px !important; } }
+
+/* line 87, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.breadcrumb {
+  margin-bottom: 15px; }
+  /* line 90, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .breadcrumb a {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 21px;
+    color: #000; }
+    /* line 163, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .breadcrumb a a:hover {
+      color: #d50000; }
+    /* line 93, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .breadcrumb a:hover {
+      color: #d50000; }
+
+/* line 99, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.ui.styled.accordion {
+  border-radius: 0;
+  border-bottom: 1px solid #808080;
+  background: transparent;
+  box-shadow: none; }
+  /* line 104, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .ui.styled.accordion .title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 10px; }
+    /* line 108, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .ui.styled.accordion .title p {
+      width: 100%;
+      margin: 0; }
+    /* line 113, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .ui.styled.accordion .title:hover {
+      color: #d50000; }
+    /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .ui.styled.accordion .title.active {
+      color: #d50000; }
+      /* line 120, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+      .ui.styled.accordion .title.active p {
+        color: #d50000; }
+      /* line 124, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+      .ui.styled.accordion .title.active .angle.down.icon {
+        display: none; }
+      /* line 128, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+      .ui.styled.accordion .title.active .angle.right.icon {
+        display: inline-block; }
+  /* line 135, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .ui.styled.accordion .angle.icon {
+    font-size: 3em;
+    width: 30px;
+    height: 25px; }
+    /* line 139, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+    .ui.styled.accordion .angle.icon:hover {
+      color: #d50000; }
+  /* line 144, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .ui.styled.accordion .angle.down.icon {
+    display: inline-block; }
+  /* line 148, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .ui.styled.accordion .angle.right.icon {
+    display: none; }
+  /* line 152, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .ui.styled.accordion .content {
+    padding: 0 10px 20px 10px; }
+
+/* line 157, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.page-node.content-padding-top .panel-1col {
+  margin-top: 50px;
+  padding: 0 29px; }
+  /* line 161, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+  .page-node.content-padding-top .panel-1col .faqfield-question {
+    margin-bottom: 20px; }
+  @media  (max-width: 991px) {
+    .page-node.content-padding-top .panel-1col {
+      margin-top: 20px;
+      padding: 0; } }
+
+/* line 172, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.node-event .date-display-range {
+  font-family: 'Roboto Bold'; }
+/* line 176, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.node-event .h3-rubric {
+  margin-bottom: 10px; }
+/* line 180, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.node-event .paragraphs-items-field-para-contents-full {
+  margin-top: 10px; }
+
+/* line 185, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+iframe {
+  height: 500px; }
+  @media  (max-width: 991px) {
+    iframe {
+      height: 200px; } }
+
+/* line 194, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.paragraphs-items .content {
+  padding: 0; }
+
+/* line 201, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.ui.styled.accordion .title.active {
+  padding-bottom: 10px; }
+/* line 205, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_nodes.scss */
+.ui.styled.accordion ul {
+  margin-top: 0; }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.events {
+  margin-bottom: 40px; }
+  /* line 4, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events .pane-title {
+    margin: 50px 0 20px;
+    position: relative; }
+    /* line 8, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+    .events .pane-title .calendar-date {
+      top: 0;
+      color: #808080;
+      display: inline-block;
+      font-size: 35px;
+      height: 37px;
+      left: 12px;
+      line-height: 70px;
+      position: absolute;
+      text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff; }
+    /* line 20, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+    .events .pane-title .calendar.outline.icon {
+      font-size: 50px;
+      color: #808080;
+      margin-left: 20px;
+      position: relative; }
+  /* line 29, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events article {
+    position: relative; }
+  /* line 33, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events .teaser-content {
+    background: url('../images/white-trans.png');
+    height: 82%;
+    margin: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 88%; }
+    @media  (max-width: 991px) {
+      .events .teaser-content {
+        margin: 10px; } }
+    @media  (max-width: 768px) {
+      .events .teaser-content {
+        width: 93%;
+        height: 90%; } }
+  /* line 53, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events span {
+    font-family: 'Roboto Bold';
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    text-transform: uppercase; }
+  /* line 57, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events a {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 21px;
+    color: #000;
+    display: block; }
+    /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .events a a:hover {
+      color: #d50000; }
+  /* line 61, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events i.red.icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0; }
+  @media  (max-width: 768px) {
+    .events {
+      display: none; } }
+  /* line 71, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .events.mobile {
+    display: none; }
+    @media  (max-width: 991px) {
+      .events.mobile {
+        display: block; } }
+
+/* line 81, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.flexslider_views_slideshow_slide .node-event {
+  position: relative; }
+  /* line 85, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .flexslider_views_slideshow_slide .node-event .pane-title {
+    margin: 50px 0 20px;
+    position: relative; }
+    /* line 89, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+    .flexslider_views_slideshow_slide .node-event .pane-title .calendar-date {
+      top: 0;
+      color: #808080;
+      display: inline-block;
+      font-size: 35px;
+      height: 37px;
+      left: 12px;
+      line-height: 70px;
+      position: absolute;
+      text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff; }
+    /* line 101, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+    .flexslider_views_slideshow_slide .node-event .pane-title .calendar.outline.icon {
+      font-size: 50px;
+      color: #808080;
+      margin-left: 20px;
+      position: relative; }
+  /* line 110, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .flexslider_views_slideshow_slide .node-event .teaser-content {
+    background: url('../images/white-trans.png');
+    height: 82%;
+    margin: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 88%; }
+    @media  (max-width: 991px) {
+      .flexslider_views_slideshow_slide .node-event .teaser-content {
+        margin: 10px; } }
+  /* line 125, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .flexslider_views_slideshow_slide .node-event span {
+    font-family: 'Roboto Bold';
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    text-transform: uppercase; }
+  /* line 129, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .flexslider_views_slideshow_slide .node-event a {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 21px;
+    color: #000;
+    display: block; }
+    /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .flexslider_views_slideshow_slide .node-event a a:hover {
+      color: #d50000; }
+  /* line 133, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+  .flexslider_views_slideshow_slide .node-event i.red.icon {
+    font-size: 20px;
+    position: absolute;
+    right: 0; }
+
+/* line 141, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.event-overview.panel #content {
+  margin-top: 0; }
+/* line 145, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.event-overview.panel .teaser-content {
+  background: url('../images/white-trans.png');
+  height: 82%;
+  margin: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  width: 81%; }
+  @media  (max-width: 991px) {
+    .event-overview.panel .teaser-content {
+      margin: 10px; } }
+/* line 160, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.event-overview.panel span {
+  font-family: 'Roboto Bold';
+  font-size: 15px;
+  line-height: 21px;
+  color: #000;
+  text-transform: uppercase; }
+/* line 164, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.event-overview.panel a {
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 21px;
+  color: #000;
+  display: block; }
+  /* line 117, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .event-overview.panel a a:hover {
+    color: #d50000; }
+/* line 168, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_events.scss */
+.event-overview.panel i.red.icon {
+  font-size: 20px;
+  position: absolute;
+  right: 0; }
+
+/* line 1, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_footer.scss */
+.footer-wrapper {
+  background-color: #808080;
+  height: 200px;
+  margin-top: 30px; }
+  /* line 223, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+  .footer-wrapper a {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase; }
+    /* line 230, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .footer-wrapper a:hover {
+      color: #d50000; }
+    /* line 234, /local/apache/ecsa/html/sites/all/themes/namu/scss/_mixin.scss */
+    .footer-wrapper a:active {
+      color: #d50000; }
+  /* line 7, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_footer.scss */
+  .footer-wrapper .menu {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 300px; }
+    /* line 14, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_footer.scss */
+    .footer-wrapper .menu li {
+      display: inline-block;
+      width: 120px;
+      float: right;
+      text-align: left; }
+      /* line 19, /local/apache/ecsa/html/sites/all/themes/namu/scss/components/_footer.scss */
+      .footer-wrapper .menu li:nth-child(2n+1) {
+        float: left; }
+  @media  (max-width: 768px) {
+    .footer-wrapper {
+      padding: 20px 10px;
+      height: 150px; } }
+
+/* line 18, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+header {
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 150px; }
+
+/* line 24, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.no.border {
+  border: 0 !important;
+  box-shadow: none; }
+  /* line 29, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  .no.border *, .no.border .extra {
+    border: none;
+    box-shadow: none; }
+
+/* line 35, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+img {
+  height: auto;
+  max-width: 100%; }
+
+/* line 40, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+picture {
+  width: 100%; }
+  /* line 43, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  picture img {
+    width: 100%; }
+
+/** HELPER **/
+/* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.only.smartphone {
+  display: none; }
+  /* line 54, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  .only.smartphone:after {
+    content: "smartphone"; }
+  @media  (max-width: 768px) {
+    .only.smartphone {
+      display: block; } }
+
+/* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.only.tablet {
+  display: none; }
+  /* line 54, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  .only.tablet:after {
+    content: "tablet"; }
+  @media  (min-width: 769px) and (max-width: 991px) {
+    .only.tablet {
+      display: block; } }
+
+/* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.only.desktop {
+  display: none; }
+  /* line 54, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  .only.desktop:after {
+    content: "desktop"; }
+  @media  (min-width: 992px) and (max-width: 1200px) {
+    .only.desktop {
+      display: block; } }
+
+/* line 52, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.only.wide {
+  display: none; }
+  /* line 54, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+  .only.wide:after {
+    content: "wide"; }
+  @media  (min-width: 1201px) {
+    .only.wide {
+      display: block; } }
+
+/* line 63, /local/apache/ecsa/html/sites/all/themes/namu/scss/styles.scss */
+.helper-breadkpoints div {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: auto;
+  z-index: 5000;
+  border-radius: .4em;
+  background-color: black;
+  color: white;
+  padding: .3em; }

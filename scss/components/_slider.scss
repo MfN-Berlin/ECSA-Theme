@@ -1,0 +1,96 @@
+.flexslider {
+  border: 0;
+  margin-bottom: 50px;
+  
+  li {
+    position: relative;
+  }
+  
+  .group-content {
+    background: url('../images/white-trans.png');
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    padding: 20px;
+    position: absolute;
+    width: 95%;
+    
+    .rubric-h2,
+    h2,
+    p {
+      width: 60%;
+      margin: 0;
+    }
+    @include at(smartphone){
+      margin: 10px;
+      padding: 10px;
+      p {
+        display: none ;
+      }
+    }
+  }
+  
+  .flex-control-paging {
+  
+    a {
+      background: $grey;
+      height: 15px;
+      opacity: .5;
+      width: 15px;
+    }
+    
+    .flex-active {
+      background: $grey;
+      opacity: 1;
+    }
+  }
+}
+
+//Event Slider
+
+.events {
+  
+  .flexslider,
+  .flexslider:hover {
+    margin: 0 auto;
+    width: 100%;
+    
+    .flex-direction-nav {
+      height: 30px;
+      position: absolute;
+      top: 42%;
+      width: 100%;
+      
+      a {
+        @include transition(none);
+        display: block;
+        line-height: 21px;
+        padding: 10px;
+        top: 8px;
+      }
+      
+      a:before {
+        color: $grey;
+        font-size: 25px;
+      }
+    }
+    
+    .flex-next {
+      opacity: 1 !important;
+      right: -50px !important;
+      
+      @include to(tablet) {
+        right: -3% !important;
+      }
+    }
+    
+    .flex-prev {
+      left: -50px !important;
+      opacity: 1 !important;
+      
+      @include to(tablet) {
+        left: -3% !important;
+      }
+    }
+  }
+}

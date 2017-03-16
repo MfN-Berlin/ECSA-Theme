@@ -1,0 +1,75 @@
+name = Namu
+description = Base theme for namu
+package = Core
+core = 7.x
+
+stylesheets[all][] = bundle/bundles.css
+stylesheets[all][] = bundle/styles.css
+
+scripts[] = js/response.min.js
+scripts[] = bundle/scripts.js
+scripts[] = js/script.js
+
+settings[main_menu_collapse] = 0
+settings[exclude][css][] = 'modules/aggregator/aggregator.css'
+settings[exclude][css][] = 'modules/block/block.css'
+settings[exclude][css][] = 'modules/book/book.css'
+settings[exclude][css][] = 'modules/comment/comment.css'
+settings[exclude][css][] = 'modules/dblog/dblog.css'
+settings[exclude][css][] = 'modules/field/theme/field.css'
+settings[exclude][css][] = 'modules/file/file.css'
+settings[exclude][css][] = 'modules/filter/filter.css'
+settings[exclude][css][] = 'modules/forum/forum.css'
+settings[exclude][css][] = 'modules/help/help.css'
+settings[exclude][css][] = 'modules/menu/menu.css'
+settings[exclude][css][] = 'modules/node/node.css'
+settings[exclude][css][] = 'modules/openid/openid.css'
+settings[exclude][css][] = 'modules/poll/poll.css'
+settings[exclude][css][] = 'modules/profile/profile.css'
+settings[exclude][css][] = 'modules/search/search.css'
+settings[exclude][css][] = 'modules/statistics/statistics.css'
+settings[exclude][css][] = 'modules/syslog/syslog.css'
+settings[exclude][css][] = 'modules/system/admin.css'
+settings[exclude][css][] = 'modules/system/maintenance.css'
+settings[exclude][css][] = 'modules/system/system.css'
+settings[exclude][css][] = 'modules/system/system.admin.css'
+settings[exclude][css][] = 'modules/system/system.maintenance.css'
+settings[exclude][css][] = 'modules/system/system.messages.css'
+settings[exclude][css][] = 'modules/system/system.theme.css'
+settings[exclude][css][] = 'modules/system/system.menus.css'
+settings[exclude][css][] = 'modules/taxonomy/taxonomy.css'
+settings[exclude][css][] = 'modules/tracker/tracker.css'
+settings[exclude][css][] = 'modules/update/update.css'
+settings[exclude][css][] = 'modules/user/user.css'
+
+
+regions[header] = Header
+regions[header_first] = Header first
+regions[header_second] = Header second
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+
+[gulp.modernizr]
+tests[] = "js"
+tests[] = "css"
+
+
+plugins[panels][layouts] = templates/panels
+
+api[page_manager][pages_default][version] = 1
+api[page_manager][pages_default][path] = pages
+
+;-------------- js -------------
+
+
+[gulp.sass]
+
+
+[gulp.css]
+paths[] = semantic/dist/components
+
+[gulp.js]
+paths[] = semantic/dist/components
+paths[] = lib
+exclude[] = jquery
