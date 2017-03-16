@@ -1,4 +1,4 @@
-# BC Default Theme
+# ECSA Default Theme
 
 ## Installation
 
@@ -85,10 +85,10 @@ In <theme>.info File
 
 ```
 [gulp.css]
-paths[] = 'bower_components/semantic-ui/dist/components'
+paths[] = 'semantic-ui/dist/components'
 
 [gulp.js]
-paths[] = 'bower_components/semantic-ui/dist/components'
+paths[] = 'semantic-ui/dist/components'
 ```
 
 Install 
